@@ -1,0 +1,71 @@
+﻿<Window x:Class="WebApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" RenderTransformOrigin="0.5,0.5">
+            <TabControl.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TabControl.RenderTransform>
+            <TabItem Header="Email">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Username" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Password" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                    <Label Content="From Email" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+                    <Label Content="To Email" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Subject" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Body" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top"/>
+                    <Label Content="SMTP Server" HorizontalAlignment="Left" Margin="231,10,0,0" VerticalAlignment="Top" Width="77"/>
+                    <Label Content="SMTP Port" HorizontalAlignment="Left" Margin="231,41,0,0" VerticalAlignment="Top" Width="77"/>
+                    <Label Content="USe SSL" HorizontalAlignment="Left" Margin="231,72,0,0" VerticalAlignment="Top" Width="77"/>
+                    <TextBox x:Name="username" HorizontalAlignment="Left" Height="23" Margin="78,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TabIndex="1"/>
+                    <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="78,44,0,0" VerticalAlignment="Top" Width="120" Height="23" TabIndex="2"/>
+                    <TextBox x:Name="from" HorizontalAlignment="Left" Height="23" Margin="78,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TabIndex="3"/>
+                    <TextBox x:Name="to" HorizontalAlignment="Left" Height="23" Margin="78,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TabIndex="4"/>
+                    <TextBox x:Name="subject" HorizontalAlignment="Left" Height="23" Margin="78,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="698" SpellCheck.IsEnabled="True" TabIndex="8"/>
+                    <TextBox x:Name="body" HorizontalAlignment="Left" Height="186" Margin="78,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="698" SpellCheck.IsEnabled="True" TabIndex="9"/>
+                    <TextBox x:Name="server" HorizontalAlignment="Left" Height="23" Margin="313,13,0,0" TextWrapping="Wrap" Text="smtp.gmail.com" VerticalAlignment="Top" Width="120" TabIndex="5"/>
+                    <TextBox x:Name="port" HorizontalAlignment="Left" Height="23" Margin="313,44,0,0" TextWrapping="Wrap" Text="587" VerticalAlignment="Top" Width="120" TabIndex="6"/>
+                    <CheckBox x:Name="ssl" Content="" HorizontalAlignment="Left" Margin="313,78,0,0" VerticalAlignment="Top" IsChecked="False" TabIndex="7"/>
+                    <Button x:Name="attachment" Content="Set Attachment" HorizontalAlignment="Left" Margin="599,361,0,0" VerticalAlignment="Top" Width="97" TabIndex="10" Click="attachment_Click"/>
+                    <Button Content="Send Email" HorizontalAlignment="Left" Margin="701,361,0,0" VerticalAlignment="Top" Width="75" Click="send" TabIndex="11"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Calculator">
+                <Grid Background="#FFE5E5E5">
+                    <TextBlock x:Name="display" HorizontalAlignment="Left" Margin="19,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="303" Height="26" FontSize="18" Background="White" TextAlignment="Right"/>
+                    <Button x:Name="nine" Content="9" Margin="181,67,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="nine_Click"/>
+                    <Button x:Name="eight" Content="8" Margin="100,67,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="eight_Click"/>
+                    <Button x:Name="seven" Content="7" Margin="19,67,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="seven_Click"/>
+                    <Button x:Name="six" Content="6" Margin="181,149,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="six_Click"/>
+                    <Button x:Name="five" Content="5" Margin="100,149,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="five_Click"/>
+                    <Button x:Name="four" Content="4" Margin="19,149,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="four_Click"/>
+                    <Button x:Name="three" Content="3" Margin="181,230,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="three_Click"/>
+                    <Button x:Name="two" Content="2" Margin="100,230,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="two_Click"/>
+                    <Button x:Name="one" Content="1" Margin="19,230,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="one_Click"/>
+                    <Button x:Name="zero" Content="0" Margin="100,308,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="zero_Click"/>
+                    <Button x:Name="add_decimal" Content="." Margin="181,309,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="dot_Click"/>
+                    <Button x:Name="add" Content="+" Margin="277,77,0,0" Width="45" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="add_Click"/>
+                    <Button x:Name="subtract" Content="-" Margin="277,127,0,0" Width="45" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="subtract_Click"/>
+                    <Button x:Name="multiply" Content="*" Margin="277,177,0,0" Width="45" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="multiply_Click"/>
+                    <Button x:Name="divide" Content="/" Margin="277,227,0,0" Width="45" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="divide_Click"/>
+                    <Button x:Name="equals" Content="=" Margin="277,306,0,0" Width="45" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="equals_Click"/>
+                    <Button x:Name="clear" Content="Clear" Margin="19,308,0,0" Width="64" Height="64" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Click="clear_Click"/>
+                    <ListBox x:Name="output_log" HorizontalAlignment="Left" Height="346" Margin="337,10,0,0" VerticalAlignment="Top" Width="439" FontSize="16"/>
+                    <Button x:Name="clearLog" Content="Clear Output Log" HorizontalAlignment="Left" Margin="337,361,0,0" VerticalAlignment="Top" Width="146.3333333333333" Click="clearLog_Click"/>
+                    <Button x:Name="copyLogItem" Content="Copy Log Item" HorizontalAlignment="Left" Margin="483,361,0,0" VerticalAlignment="Top" Width="147" Click="copyLogItem_Click"/>
+                    <Button x:Name="deleteLogItem" Content="Delete Log Item" HorizontalAlignment="Left" Margin="629,361,0,0" VerticalAlignment="Top" Width="147" Click="deleteLogItem_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\bin\Release\WebApp.exe.config
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\bin\Release\WebApp.exe
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\bin\Release\WebApp.pdb
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\MainWindow.g.cs
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\App.g.cs
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\WebApp_MarkupCompile.cache
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\WebApp_MarkupCompile.lref
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\MainWindow.baml
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\WebApp.g.resources
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\WebApp.Properties.Resources.resources
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\WebApp.csproj.GenerateResource.cache
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\WebApp.csproj.CoreCompileInputs.cache
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\WebApp.exe
+C:\Users\agshe\Documents\visual\Projects\WebApp\WebApp\obj\Release\WebApp.pdb
